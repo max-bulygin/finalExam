@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
-    concat = require('gulp-concat');;
+    concat = require('gulp-concat'),
+    imageOptim = require('gulp-imageoptim');
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/main.scss')
@@ -34,10 +35,11 @@ gulp.task('copyStyles', function() {
         .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('copyImages', function() {
-    gulp.src('./src/img/*.*')
+gulp.task('images', function() {
+    return gulp.src('./src/img/*.*')
+        .pipe(imageOptim.optimize())
         .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('default', ['sass', 'watch']);
-gulp.task('build', ['sass', 'rigger', 'copyStyles', 'copyImages', 'scripts']);
+gulp.task('build', ['sass', 'rigger', 'copyStyles', 'images', 'scripts']);
