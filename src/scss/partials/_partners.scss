@@ -1,0 +1,31 @@
+//PARTNERS
+
+.l-partners {
+
+  &__headline {
+    padding: 0 10px;
+  }
+
+  &__users {
+    width: 68.75%;
+    margin: auto;
+
+    @include minw($break-small) {
+      width: 65.10416%;
+    }
+
+    @include minw($break-large) {
+      width: 100%;
+      margin-top: 32px;
+    }
+  }
+
+  &__more {
+    padding-top: 18px;
+    text-align: center;
+
+    @include minw($break-large) {
+      padding-top: 42px;
+    }
+  }
+}

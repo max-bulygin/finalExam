@@ -1,0 +1,34 @@
+//reset, colors and typography
+@import "base/reset";
+@import "base/colors";
+@import "base/typography";
+@import "base/breakpoints";
+
+html {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+//helpers
+@import "helpers/mixins";
+
+//components
+@import "components/buttons";
+@import "components/headlines";
+@import "components/forms";
+@import "components/layout";
+@import "components/user";
+@import "components/misc";
+
+//partials
+@import "partials/header";
+@import "partials/steps";
+@import "partials/partners";
+@import "partials/discover";
+@import "partials/search";
+@import "partials/footer";

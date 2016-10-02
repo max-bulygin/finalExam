@@ -1,0 +1,26 @@
+.c-form {
+  padding: 0 18px;
+
+  &__input {
+    padding: 11px 14px;
+    font-size: 14px;
+    border: 1px solid $placeholder;
+    border-radius: 3px;
+    width: 100%;
+    letter-spacing: -.4px;
+
+    @media (min-width: $break-medium) {
+      width: 59%;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    margin-top: 10px;
+
+    @media (min-width: $break-medium) {
+      width: 40%;
+      margin: 0;
+    }
+  }
+}

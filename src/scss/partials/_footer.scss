@@ -1,0 +1,26 @@
+//FOOTER
+
+.l-footer {
+  border-top: 4px solid $brand-primary;
+  text-align: center;
+
+  &__logo {
+    padding-top: 17px;
+  }
+
+  &__links {
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: $break-small) {
+  .l-footer {
+    &__logo,
+    &__links,
+    &__design {
+      width: 25%;
+      float: left;
+      padding-top: 36px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+//HEADLINES
+
+.c-main-headline {
+  color: $image-heading;
+  font-family: $google-font--primary;
+  font-size: 30px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media (min-width: $break-small) {
+    font-size: 52px;
+  }
+}
+.c-subheader {
+  color: $description;
+  font-family: $google-font--secondary;
+  font-size: 18px;
+  font-weight: $light;
+  margin: auto;
+  text-align: center;
+
+  &--bright {
+    color: $image-heading;
+  }
+}
+.c-section-headline {
+  color: $section-heading;
+  font-family: $google-font--primary;
+  font-size: 22px;
+  font-weight: $bold;
+  text-align: center;
+  padding: 35px 0 0;
+}

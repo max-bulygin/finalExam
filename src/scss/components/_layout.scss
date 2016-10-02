@@ -1,0 +1,16 @@
+.l-section-wrapper {
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $break-small) and (max-width: ($break-medium - 1)) {
+    width: 480px;
+  }
+
+  @media (min-width: $break-medium) and (max-width: ($break-large - 1)){
+    width: 768px;
+  }
+
+  @media (min-width: $break-large) {
+    width: 960px;
+  }
+}

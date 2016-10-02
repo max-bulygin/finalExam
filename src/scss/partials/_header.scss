@@ -1,0 +1,68 @@
+.l-header {
+  height: 540px;
+  width: 100%;
+  background-image: url('../img/header.320x540.png');
+  background-size: cover;
+  text-align: center;
+
+  @media (min-width: $break-small) and (max-width: $break-large) {
+    background-image: url('../img/header.768x700.png');
+    height: 700px;
+  }
+
+  @media (min-width: $break-large) {
+    background-image: url('../img/header.1440x700.png');
+    height: 700px;
+  }
+
+  &__site-enter {
+    padding-top: 20px;
+
+    @media (min-width: $break-small) {
+      float: right;
+      padding-top: 38px;
+    }
+
+    @media (min-width: $break-small) and (max-width: $break-medium) {
+      margin-right: 48px;
+    }
+  }
+
+  &__logo {
+    padding-top: 115px;
+
+    @media (min-width: $break-small) {
+      float: left;
+      padding-top: 46px;
+    }
+
+    @media (min-width: $break-small) and (max-width: $break-medium) {
+      margin-left: 50px;
+    }
+  }
+
+  &__headlines {
+    padding-top: 28px;
+
+    @media (min-width: $break-small) {
+      padding: 215px 90px 0;
+    }
+  }
+
+  &__subheader {
+    width: 72%;
+
+    @media (min-width: $break-small) {
+      margin-top: 25px;
+      font-size: 24px;
+    }
+  }
+
+  &__cta {
+    padding-top: 15px;
+
+    @media (min-width: $break-small) {
+      padding-top: 35px;
+    }
+  }
+}

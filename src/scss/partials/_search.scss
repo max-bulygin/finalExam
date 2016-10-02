@@ -1,0 +1,23 @@
+//SEARCH
+
+.l-search__question {
+  padding: 10px 0;
+
+  @media (min-width: $break-medium) {
+    padding: 31px 0;
+  }
+}
+
+.l-search__form {
+  padding: 7px 0 39px;
+
+  @media (min-width: $break-medium) {
+    width: 58%;
+    margin: auto;
+  }
+
+  @media (min-width: $break-large) {
+    width: 47%;
+    margin: auto;
+  }
+}

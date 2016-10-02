@@ -1,0 +1,83 @@
+.l-carousel {
+  padding: 10px 10px 0;
+
+  &__step {
+    display: inline-block;
+    background-color: $brand-primary;
+    border-radius: 10px;
+    color: white;
+    font-family: $google-font--primary;
+    font-size: 10px;
+    font-weight: $normal;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    position: absolute;
+    top: 52.75%;
+  }
+
+  &__header {
+    color: white;
+    font-family: $google-font--primary;
+    font-size: 24px;
+    font-weight: $bold;
+    position: absolute;
+    top: 62.5%;
+  }
+
+  &__text {
+    color: $image-description;
+    font-family: $google-font--secondary;
+    font-size: 14px;
+    font-weight: $light;
+
+    position: absolute;
+    top: 79%;
+  }
+
+  &__cell {
+    width: 100%; /* full width */
+    height: 240px; /* height of carousel */
+    border-radius: 4px;
+    padding: 19px;
+    position: relative;
+  }
+  
+  &__cell--first {
+    background: url('../img/step-1-sm.png');
+    background-size: cover;
+  }
+
+  &__cell--second {
+    background: url('../img/step-2-sm.png');
+    background-size: cover;
+  }
+
+  &__cell--third {
+    background: url('../img/step-3-sm.png');
+    background-size: cover;
+  }
+
+  @include minw($break-medium) {
+    width: 33.3333%;
+    float: left;
+
+    &__cell {
+      height: 400px;
+    }
+  }
+}
+
+.l-steps__headline {
+  @include minw($break-medium) {
+    padding-top: 93px;
+    padding-bottom: 20px;
+  }
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-prev-next-button {
+  top:10%
+}

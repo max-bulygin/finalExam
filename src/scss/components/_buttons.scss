@@ -1,0 +1,32 @@
+//BUTTONS
+
+.c-button {
+  outline: 0;
+  background: transparent;
+  color: $image-heading;
+  font-weight: $bold;
+  padding: 7px 18px 7px;
+  font-family: $google-font--primary;
+  font-size: 14px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  &--solid {
+    background: $brand-primary;
+    padding: 9px;
+  }
+  &--border-bright {
+    border-color: white;
+  }
+  &--border-dark {
+    border-color: $brand-primary;
+    color: $brand-primary;
+  }
+}
+
+.c-button__text {
+  //display: block;
+  //color: $image-heading;
+  //font-weight: $bold;
+  //padding: 12px 18px 10px;
+}

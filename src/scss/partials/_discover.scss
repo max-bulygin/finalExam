@@ -1,0 +1,79 @@
+//DISCOVER
+
+.l-masonry {
+  margin-top: 8px;
+
+  &__item {
+    width: 93.75%;
+    height: 120px;
+    margin: 5px 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    color: $image-heading;
+    font-family: $google-font--primary;
+    font-size: 22px;
+    font-weight: $bold;
+  }
+}
+
+@media (min-width: $break-small) and (max-width: ($break-medium - 1px)) {
+
+}
+
+@media (min-width: $break-medium) and (max-width: ($break-large - 1px)) {
+
+  .l-masonry {
+    margin-top: 20px;
+
+    &__item {
+      width: 236px;
+      height: 310px;
+      margin: 10px;
+
+      &--width2 {
+        width: 492px;
+      }
+    }
+  }
+}
+
+@media (min-width: $break-large) {
+  .l-masonry {
+    margin-top: 24px;
+
+    &__item {
+      width: 300px;
+      height: 310px;
+      margin: 10px;
+
+      &--width2 {
+        width: 620px;
+      }
+    }
+  }
+}

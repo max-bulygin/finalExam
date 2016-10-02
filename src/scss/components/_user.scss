@@ -1,0 +1,34 @@
+.c-user-card {
+  text-align: center;
+  font-size: 14px;
+  padding: 14px 0;
+
+  @media (min-width: $break-small) and (max-width: ($break-large - 1)) {
+    width: 50%;
+    float: left;
+    margin-top: 18px;
+  }
+
+  @include minw($break-large) {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+  }
+}
+.c-user-card__img {
+  border-radius: 50%;
+}
+.c-user-card__name {
+  color: $section-heading;
+  font-family: $google-font--primary;
+  font-weight: $bold;
+  font-size: inherit;
+  padding: 14px 0;
+}
+.c-user-card__info {
+  color: $description;
+  font-family: $google-font--secondary;
+  font-weight: $light;
+  font-size: inherit;
+  //padding: 0 38px;
+}

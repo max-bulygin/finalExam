@@ -1,0 +1,85 @@
+//LOGO
+
+.c-logo {
+  font-family: $google-font--primary;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &--primary {
+    color: $image-heading;
+    font-size: 20px;
+  }
+
+  &--secondary {
+    color: $brand-primary;
+    font-size: 16px;
+
+    @media (min-width: $break-small) {
+      text-align: center;
+      //margin-left: 40px;
+    }
+
+    @media (min-width: $break-large) {
+      text-align: left;
+    }
+  }
+}
+
+//EXTRA FOOTER LINKS
+
+.c-links {
+  font-size: 14px;
+
+  &__header {
+    font-size: inherit;
+    color: $section-heading;
+    font-family: $google-font--primary;
+    font-weight: $bold;
+
+    @media (min-width: $break-small) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item {
+    color: #666;
+    font-family: $google-font--secondary;
+    font-weight: $light;
+    font-size: inherit;
+    line-height: 24px;
+
+    @media (min-width: $break-small) {
+      display: block;
+      text-align: left;
+      margin-left: 38.020833%;
+    }
+  }
+}
+
+//DESIGN COMPANY LOGO
+
+.c-design {
+  width: 110px;
+  margin: 14px auto;
+
+  &__text {
+    color: $image-description;
+    font-family: $google-font--primary;
+    font-size: 10px;
+    font-weight: $bold;
+    text-transform: uppercase;
+
+    @media (min-width: $break-small) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $break-small) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $break-large) {
+    float: right;
+  }
+}

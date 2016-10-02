@@ -1,0 +1,22 @@
+//colors
+$x-white            : #fff;
+$x-silver           : #ccc;
+$x-dusty-grey       : #999;
+$x-grey             : #666;
+$x-mine-shaft       : #333;
+$x-rangoon-green    : #1a1915;
+$x-sunset-orange    : #ff4e50;
+
+//color usage
+
+$brand-primary      : $x-sunset-orange;
+$background         : $x-rangoon-green;
+$section-heading    : $x-mine-shaft;
+$image-heading      : $x-white;
+$image-description  : $x-silver;
+$secondary-heading  : $x-mine-shaft;
+$description        : $x-grey;
+$input-border       : $x-silver;
+$placeholder        : $x-dusty-grey;
+$footer-menu        : $x-grey;
+$footer-heading     : $x-mine-shaft;
