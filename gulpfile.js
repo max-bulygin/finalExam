@@ -39,5 +39,10 @@ gulp.task('copyImages', function() {
         .pipe(gulp.dest('build/img'));
 });
 
+gulp.task('script-ie', function() {
+    gulp.src('./src/js/isotope-ie/*.*')
+        .pipe(gulp.dest('build/js/isotope-ie/'));
+});
+
 gulp.task('default', ['sass', 'watch']);
-gulp.task('build', ['sass', 'rigger', 'copyStyles', 'copyImages', 'scripts']);
+gulp.task('build', ['sass', 'rigger', 'copyStyles', 'copyImages', 'scripts', 'script-ie']);
